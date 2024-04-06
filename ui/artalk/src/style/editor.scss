@@ -85,7 +85,7 @@
     flex-direction: row;
     row-gap: 5px;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
     flex-wrap: wrap;
 
     & > .atk-item {
@@ -200,23 +200,23 @@
 
     .atk-send-btn {
       background: var(--at-color-main);
-      color: #fff;
-      font-size: $font-size;
+      color: var(--at-text-color);
+      font-size: 1rem;
       border: none;
       margin: 0;
-      height: 30px;
-      min-width: 7.3em;
+      padding: 0.5rem 1rem;
       cursor: pointer;
       transition: opacity 0.3s ease-in-out;
       outline: none;
-      border-radius: calc($block-radius / 2);
-
-      @media only screen and (max-width: 768px) {
-        min-width: 6em;
-      }
+      border-radius: 6px;
+      transition: background 0.2s;
 
       &:active {
         opacity: 0.9;
+      }
+
+      &:hover {
+        background: #2563eb;
       }
     }
   }
